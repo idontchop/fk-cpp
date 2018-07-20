@@ -1,0 +1,113 @@
+WARNING!!!  Whether or not this will work right is still kinda ify.
+You should get in touch with me before writing one or wait for a higher
+version.
+
+
+Using the 3rdparty.exe file, it is simple to add a module to this game to 
+be reached by way of searching the forest.  
+If you are inclined in programming doors and would like to program and module
+sysops can add to this game, read on.  Otherwise, this file contains nothing.
+-------------------------------------------
+3rdparty.exe
+-------------------------------------------
+
+First in order to let FK know there is a 3rdparty module installed, you must
+use 3rdparty.exe.  It is a simple program that uses 3rdparty.dat file to
+store all modules.  To use 3rdparty.exe, enter these parameters in your
+install program:
+
+3rdparty [module name] [town location] [path/file to mod] [path to fk]
+
+EXP:
+3rdparty "Wishing well" hayward c:\fk\wish\wish.exe c:\fk
+
+You will need to write an install program to find out where Farmers and Kings
+is located and perhaps to find out what town the sysop would prefer your
+module to be located in.  The name of the module can be up to 70 characters
+long.  If you need to put a space in the name, use quotation marks.
+Towns should be specified by the following:
+        Hayward
+        Den
+        Pomdirgunua
+        Burkshire
+
+These are the only towns that have forests.  Please try to keep your type
+of modules correct on the town.  As in, don't put a Pirate's Treasure Hole
+in Pomdirgunua, or a carnival in Burkshire.
+As to the size and and extent of your module, it doesn't matter to me at all.
+You can program a whole game and add it on if you want to.
+FK does swap itself to EMS or disk, but does not exit completely.
+
+-----------------------------------------
+FKDROP.DAT
+-----------------------------------------
+
+When a 3rdparty module is spawned from Farmers and Kings, a drop file is
+created in the directory called fkdrop.dat.  It contains the following
+information:
+* - can be edited by module
+
+User's Alias *
+User's Sex * M or F
+User's strength *  1-22
+User's dexterity * 1-22
+User's aim * 1-20
+User's experience * 1-60000
+User's current hit points * 1- totalhit
+User's total possible hit points * 1-220
+User's coins * 1-60000
+User's ammo * 1-40
+User's long-range weapon
+User's short-range weapon
+Path to BBS drop file
+
+*IMPORTANT:  Fkdrop.dat must be written back or not deleted.  First ten 
+values must be available to be read by Farmers and Kings.
+Failare to do so could crash the game.
+
+Long-range weapon and short-range weapon will contain the following values:
+
+        Short-range
+        -----------
+1- Dagger
+2- Short Sword
+3- Mace
+5- Morning Star
+6- Long Sword
+7- Axe
+9- White Sword
+10- Diamond Sword
+12- Scorion's Axe
+15- Death Scythe
+
+        Long-range
+        ----------
+8- Sling
+10- Spear
+20- Bow
+30- Sling
+
+-------------------------------
+LOCAL PLAY
+-------------------------------
+
+        If Farmers and Kings is being played in local mode, it will pass a
+command-line parameter to your program of "l"  Use this to run your program
+in local mode.
+
+-------------------------------
+Finally
+-------------------------------
+
+        Well, that should get you started.  Feel free to read player.dat, for
+more information but please do not edit it in anyway.  If you would like to
+know more about how Farmers and Kings works or would like to know exactly
+how all variables are stored in Player.dat, feel free to call my bulletin
+board and ask.  If you program a module, I would love to see it, upload
+it to my bulletin board.  And if it is OK, I would like to see the source
+code.  If you have any questions, feel free to contact me at my Bulletin
+Board:
+                The Stone Tower BBS    (PcBoard 15.21)
+                (918) 478-4326
+                14.4 bps
+                Fidonet: 1:3813/307

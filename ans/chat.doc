@@ -1,0 +1,20 @@
+Farmers and Kings offers an easy to use, colorful, and interaction-full
+teleconference-style chat.  In order for the game to have maximum use on
+your board, I have offered a way for up to ten additional users to access
+the chat on top of the 50 players that can be in it at a time.
+
+The only thing that needs to be done is adding the arguement "chat" on to
+king.exe.  NOTE:  It will do no good adding it to fk.bat.
+
+examples:  
+
+        node 1:
+          king 1 chat
+
+        local:
+          king local chat
+
+I have left this feature for use unregistered, but please register if you 
+use this feature.  Afterall, there are some chat doors out there equal in
+quality to this one that have a registering price close to the price for
+this whole package.

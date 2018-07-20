@@ -1,0 +1,282 @@
+----------------------------------------------------------------------------
+                        Farmers and Kings  version 1.72
+----------------------------------------------------------------------------
+  
+NOTE:  Upgrading from 1.65 or higher only requires unzipping over the
+       older version.
+
+Ways to contact me:
+        Email: Guardian@ok.azalea.net
+        Fido : 1:3813/307
+        BBS  : (918) 478-4326
+        Mail : POB 1805
+               Fort Gibson, OK  74434
+FREQ 1:3813/307 "FK" for latest version.
+
+ --------------------------------------------------------------------------
+| There is a nice multi-node teleconference-style chat in the door that   |
+|      can be ran individually from the main game.  Read chat.doc.        |
+ --------------------------------------------------------------------------
+
+Designed and Programmed by,
+                Jeb Dunn
+
+Programmed with Opendoors Door Programming Toolkit v5.1 beta
+
+I would like to thank DALE DEWOODY and ALAN THIESSAN for their ideas and
+the ANSI screens of Sussenex and Burkshire.
+
+I would also like to thank these people for playtesting.  (Whether they knew
+thats what they were doing or not):
+
+Jerod Rentfrow         Scott Scenter          Mike Deturk
+Trena James            Tony Harrison
+
+Farmers and Kings was written using Turbo C++ and Opendoors Door Programming
+Toolkit.  FK supports RemoteAccess, QuickBBS, PC-Board, Maximus, Opus,
+Wildcat!, WWIV, Spitfire, SuperBBS, Telegard, RBBS-PC, TriTel, GAP, and
+others.
+
+Fk supports any boards with the following dropfiles:  CHAIN.TXT, 
+       DORINFO1.DEF, EXITINFO.BBS, DOOR.SYS, SFDOORS.DAT, CALLINFO.BBS
+
+Even though I have spent months and months testing this game, and I'm
+sure it is safe, I will not hold any responsibility for damage done by 
+use of this game.
+
+----------------------------------------------------------------------------
+Now on to INSTALLATION!
+----------------------------------------------------------------------------
+
+  FK172.ZIP should have contained the following files:
+     Install.exe        -       Used to setup game
+     King.exe           -       Main playing file
+     fkedit.exe         -       Player and settings editor
+     Maintain.exe       -       Runs maintenance
+     3rdparty.exe       -       Used to add game modules
+
+     Fksysop.doc        -       This file: explains everything
+     3rdparty.doc       -       Explains use of 3rdparty.exe
+     chat.doc           -       Explains use of external chat
+
+     Order.frm          -       To send in for registration
+
+     20 *.ANS files
+     12 *.DAT files
+      8 *.ASC files
+
+----------------------------------------------------------------------------
+1.  Setup
+----------------------------------------------------------------------------
+     The first step in setting up the game is running INSTALL.EXE. 
+It will set up a single node for use with fk.bat.  For multi-node 
+systems, use fkedit.exe to setup all other nodes.
+The reason for this batch file is to change the directory to where
+Farmers and Kings is located.  Now the game is ready to play locally.
+Run king.exe with the command-line parameter of -l.
+
+FK.BAT must receive the node number as a parameter.
+
+IMPORTANT:
+     You may want to check fk.bat out and make sure it fits your board's
+needs.
+
+----------------------------------------------------------------------------
+2.  Run it local
+----------------------------------------------------------------------------
+
+KING /L
+
+     The game should work perfectly.  Take time to look through the game
+and see whether or not this game is worthy for your BBS.  If the game is
+unregistered, notice how you cannot move to another town from the docks.  
+This is the only way the game is crippled while not registered.  But 80
+percent of the game is across the seas.
+
+----------------------------------------------------------------------------
+3.  Setup for BBS
+----------------------------------------------------------------------------
+     
+FK [nodenumber]     
+
+     Run fk.bat from the BBS.  Or if your BBS uses its own batch files to 
+run doors, feel free to bypass fk.bat and run king.exe directly.  But be 
+sure to run king.exe with the node number as a parameter.
+
+EXP (for single node systems using fk.bat)
+        fk 1
+
+EXP (for single node systems bypassing fk.bat)
+        cd\fk
+        king 1
+        
+----------------------------------------------------------------------------
+4.   DON'T FORGET THIS STEP:   Maintenance
+----------------------------------------------------------------------------
+
+        I made MAINTAIN.EXE a seperate file so that the sysop could run
+it anytime preferred.  Also so that playing the game locally would not
+be such a hassle.  Just run the file from your nightly batch file or
+whenever you prefer to do it.
+
+HOWEVER:  You must change the directory to where FK is located.  Sorry
+for the trouble.
+EXP:
+
+C:
+CD\FK
+MAINTAIN
+
+     DO NOT run maintain.exe just before king.exe unless you want to start a
+new playing day everytime someone plays.
+
+----------------------------------------------------------------------------
+fkedit.exe
+----------------------------------------------------------------------------
+
+    That's all you need.  You can use fkedit.exe to configure the game to your
+preferences.  FKedit is a simple, quick program to edit players, change 
+settings, setup nodes, or to register the game.  
+
+If you run a multi-node system, be sure to setup your nodes!
+
+Well, That's it!  The game is ready to be played.
+
+----------------------------------------------------------------------------
+REGISTRATION
+----------------------------------------------------------------------------
+
+     Before the game is registered, it is completely playable.  However it
+does have an annoying feature which limits the fun in the game.  The Land
+of Trimmail is made of seven towns each with its own ANSI file.  The player
+starts on a small island.  The annoying feature is that the player cannot 
+move to another town using the docks.  That makes the game unwinnable and
+very boring compared to all the game has to offer.  There is no limitation
+for the sysop unless he is a player.
+
+     To register, print out the file order.frm and fill it out.  Or if you
+do not have a printer, you can write out all the information.
+Send the form plus $14 to this address:
+
+                Jeb Dunn
+                POB 1805
+                Ft. Gibson, OK  74434
+                USA
+
+     The $14 must be payed in US currency by cash, check, or money order.
+I am not responsible for any cash lost in the mail.  But I have never lost
+any cash in the mail and that is usually the way I send in registrations.
+
+READ THE BOTTOM OF THIS FILE FOR IMPORTANT NOTICE!
+
+----------------------------------------------------------------------------
+SYSOP FUNCTION KEYS:
+----------------------------------------------------------------------------
+
+     There is a variety of function keys the sysop can use while someone is
+playing the game.
+
+F9      Display help information: tells the functions of all the other
+        function keys.
+[UP]/[DOWN]     To increase or decrease amount of time left for user.
+ALT-C   To break in for a chat with user, [ESC] will end chat
+ALT-J   Allows you to shell to DOS.
+ALT-H   To Hang up on the user.  Will return control to BBS.
+ALT-L   (Works with some info files) Hangs up on user and locks them out of
+        BBS.
+ALT-D   Drops user to BBS.
+
+----------------------------------------------------------------------------
+If there is any question you want to ask, I will try to answer them in
+this section.
+----------------------------------------------------------------------------
+     
+     FK does monitor carrier and checks for inactivity.  It does not check
+for vulgar words used as handles but the user can be deleted or the handle
+changed by using FKedit.  The maximum amount of players is 50 (which I am
+going to try to change in the next version).  The game is played using turns
+as many other games do.  There is no time limit except for the time left on
+the BBS.  If the user's time has run out, the game will return control to the
+BBS.
+     
+     When the game is won by a user, noone will be able to play until
+maintenance is ran.  So, if someone asks you to restart the game because
+someone has beaten it, don't worry about it.  As long as maintain.exe is ran
+at midnight, no problem with restarting.  If for some reason you want to
+restart the game before it is won, run install.exe.
+
+     Although I tested the game as thoroughly as I could, there are probably
+still some stinken bugs hidden somewhere in the game.  If you find one, I
+would really appreciate being informed.  I will put your name and BBS number
+in the docs of upcoming versions somewhere.  
+
+If you are having trouble with the game for any reason or would like
+to comment to me about the game, contact me at:
+
+                                The Stone Tower BBS
+                                (918) 478-4326
+
+----------------------------------------------------------------------------
+HISTORY
+----------------------------------------------------------------------------
+
+First release:  October '94
+
+"Farmers and Kings" originally started as "To Kill a King" but due to 
+criticism and the urge for a more game-like name, it was changed.
+
+Version 1 : Started out as "To Kill a King".  This was basically a quick 
+            release and completely full of bugs.  In fact on most systems,
+            the game was not operatable at all.  
+
+Version 1.05 : ANSI screens were fixed, log-in crashes were fixed.  Several
+            misspelled words were fixed.
+
+Version 1.1  : "To Kill a King" changed to "Farmers and Kings."  New ANSI 
+            screens.  Instruction file rewritten.  Sysop file rewritten.
+            Several unnoticeable bugs in install.exe were fixed.
+            Entire game was basically cleaned up.
+
+Version 1.5  : Colors were fixed.  Now low-intensity colors are shown.  Now
+            FK can be used with RA 2.00+ and is aware of Windows.  3rdparty
+            module support was added.  Easier installation.  A couple new
+            ANSI screens.  Several new features added.  New weapon added.
+            It is now easier to get started at first.  Fksysop.doc rewritten
+            again.  Horseman tip screen added.
+
+Version 1.6  : Multi-node support is added.  All text files such as log files
+            are given color.  Bank style treasure hole added.
+
+Version 1.65 : Multi-node bugs worked out.  Quick instructions, tavern
+            conversations and many other features added. 
+
+Version 1.7  : More Multi-node bugs worked out.  Bright hotkeys added.
+            Sheild conversions added.  Choice of Powerful player or Rich
+            player added at beginning.  3rd party module technology update.
+
+Version 1.71 : Minor bug fixes.  FILE_ID.DIZ added to zip.
+
+Version 1.72 : Minor bug fixes, mostly having to do with unavailable commands.
+
+FUTURE
+-----------------------------------------------------------------------------
+
+Farmers and Kings version 2.0 will be one killer game!  
+Plus more multi-node features.  The broken farmer will be
+able to become a thief and join the Thieves Guild.  Almost every building
+in the game will have an arcade or strategy type way of stealing things.
+When a player dies, the option of playing the "other side" is open.  The
+Library will come alive as a "mission headquarters."  The library will give
+information for all kinds of subplots to be followed up on completely off
+the path of the king. 
+
+        When this version comes out, if you haven't already registered
+        Farmers and Kings, the registration cost will be $15 to $25 dollars.
+        After it comes out, registration for 1.** will still be $14 but
+        to get 2.0, there will be an upgrade charge.  So register now
+        to get the upcoming game registration and all later ones for free.
+
+Farmers and Kings version 2.0 is scheduled for release after April '96
+and no later than July '96.  
+
+I HOPE YOU ENJOY THE GAME!
