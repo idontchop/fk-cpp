@@ -1,0 +1,56 @@
+void disrip(int button)
+{
+od_printf("!|*|1K|w06022B0P11|W0|c09|=00000001|R140DGE53|R0W06GM5B|S0101|F455609|c0B\n\r");
+od_printf("!|R1009GH57|c03|R0X07GK59|R120BGF55|Y00000100\n\r");
+od_printf("!|1B00000000LC0100000B010900000009000000|1U015FHH610000\n\r");
+od_printf("!|1B00000000LC010000010B0900000009000000|1U075KHB5W0000|c0E|Y00000100\n\r");
+od_printf("!|@0D5NFarmers & Kings|c01|R5Q7FBW9P|R617NBL9G|c0B|R5W7IBR9K|c03|R5Y7KBO9I\n\r");
+od_printf("!|R5T7GBU9N|c09|R637OBK9E|c0F|Y07000300|@6I7NFarmers and|@7T8EKings\n\r");
+od_printf("!|1B00000200M4010F0F0F080703000F07000000\n\r");
+while(1)
+{
+od_printf("!|1U03675D6N0000");
+if(button==1)
+	break;
+od_printf("|1UC567HF6N0000");
+if(button==2)
+	break;
+od_printf("|1U6467BE6N0000");
+if(button==3)
+	break;
+od_printf("|1U036T5D790000");
+if(button==4)
+	break;
+od_printf("|1UC56THF790000");
+if(button==5)
+	break;
+od_printf("|1U646TBE790000");
+if(button==6)
+	break;
+od_printf("|1U037F5D7V0000");
+if(button==7)
+	break;
+od_printf("|1UC57FHF7V0000");
+if(button==8)
+	break;
+od_printf("|1U03815D8H0000");
+if(button==9)
+	break;
+od_printf("|1UC581HF8H0000");
+if(button==10)
+	break;
+od_printf("|1U038N5D930000");
+if(button==11)
+	break;
+od_printf("|1UC58NHF930000");
+if(button==12)
+	break;
+od_printf("|1U03995D9P0000");
+if(button==13)
+	break;
+od_printf("|1UC599HF9P0000");
+break;
+}
+od_printf("|Y07000100");
+
+}
