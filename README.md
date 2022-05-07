@@ -9,6 +9,6 @@ It was a sophisticated door game, especially for a teenaged programmer with only
 If you have made it here looking for the registration code, try this. Works with fk202.zip
 (And be sure to drop me an email that the game is still being played! :)
 
-Board Name: Free
-Letter Code: GLSKDMTEPDOGKFS
-Number Code: 10060
+- Board Name: Free
+- Letter Code: GLSKDMTEPDOGKFS
+- Number Code: 10060
