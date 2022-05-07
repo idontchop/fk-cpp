@@ -12,3 +12,8 @@ If you have made it here looking for the registration code, try this. Works with
 - Board Name: Free
 - Letter Code: GLSKDMTEPDOGKFS
 - Number Code: 10060
+
+## Where you can still play
+
+Constructive Chaos BBS [link] (https://conchaos.synchro.net/)
+*Use at own risk, I only found via Google link
